@@ -5,6 +5,11 @@
   --hero-footer-color: #2f303a;
   --background-text-color: #ffffff;
 }
+
+p,h1,h2,h3 {margin: 0;}
+
+ul {margin: 0; padding-left: 0;}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -18,6 +23,14 @@ body {
 }
 .list {
   list-style: none;
+}
+
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -48,6 +61,14 @@ body {
   color: #000000;
 }
 
+.header {padding-top: 24px;
+padding-bottom: 25px;
+}
+
+header-nav {
+
+}
+
 .header-nav-link.current
 {
   color: var(--accent-color);
@@ -58,6 +79,7 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  display: block;
 }
 
 .header-nav-link:hover,
@@ -70,6 +92,8 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  display: block
+ 
 }
 
 .contact-link:hover,
@@ -81,6 +105,8 @@ body {
 
 .hero {
   background-color: var(--hero-footer-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -90,6 +116,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-text-color);
+  max-width: 696px;
+  margin: 0 auto;
+  
 }
 
 .hero-btn {
@@ -102,6 +131,8 @@ body {
   color: var(--background-text-color);
   background: var(--accent-color);
   cursor: pointer;
+  margin: 0 auto;
+  display:block;
 }
 
 /* section 2 */
