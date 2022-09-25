@@ -1,3 +1,4 @@
+
 :root {
   --accent-color: #2196f3;
   --primary-text-color: #212121;
@@ -37,7 +38,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
   margin: 0 auto;
 }
 
@@ -60,6 +60,10 @@ img {
   margin: -1px;
 }
 
+.section {
+  padding: 94px 0;
+}
+
 /* -----------------------------------HEADER------------------ */
 
 .logo {
@@ -68,6 +72,10 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
+  display: inline-block;
+}
+
+.head-logo {
   color: var(--accent-color);
   margin-right: 93px;
   padding-top: 24px;
@@ -86,8 +94,7 @@ img {
 }
 
 .header-container,
-.header-nav
-{
+.header-nav {
   display: flex;
   align-items: center;
 }
@@ -183,8 +190,6 @@ img {
 
 .values-list {
   display: flex;
-  padding-top: 94px;
-  /* padding-bottom: 94px; */
 }
 
 .values-item:not(:last-child) {
@@ -231,12 +236,10 @@ img {
 }
 
 .section-title {
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
 .team-list {
-  padding-bottom: 94px;
   display: flex;
   justify-content: center;
 }
@@ -275,11 +278,15 @@ img {
 
 .footer {
   background: var(--hero-footer-color);
+  padding: 60px 0;
 }
 
-.footer-block {
-  padding: 60px;
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--accent-color);
 }
+
 .footer-logo-part {
   color: var(--background-text-color);
 }
@@ -289,7 +296,6 @@ img {
   font-style: normal;
   line-height: calc(24 / 14);
   color: var(--background-text-color);
-  margin-top: 20px;
   margin-bottom: 9px;
 }
 
