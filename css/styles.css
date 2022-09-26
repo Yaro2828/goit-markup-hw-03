@@ -88,8 +88,7 @@ img {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+
   border-bottom: 1px solid #ececec;
 }
 
@@ -103,8 +102,7 @@ img {
   display: flex;
 }
 
-.header-nav-item:not(:last-child),
-.header-contacts-item {
+.header-nav-item:not(:last-child){
   margin-right: 50px;
 }
 
@@ -184,6 +182,7 @@ img {
   border-radius: 4px;
   min-width: 216px;
   height: 50px;
+  border: none;
 }
 
 /* section 2 */
@@ -210,6 +209,9 @@ img {
 }
 
 /* what-we-do--------------- */
+.gallery {
+    padding-top: 0;
+}
 
 .section-title {
   font-size: 36px;
@@ -218,7 +220,7 @@ img {
   text-align: center;
 }
 .gallery-list {
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
   display: flex;
 }
 
@@ -235,13 +237,9 @@ img {
   background: #f5f4fa;
 }
 
-.section-title {
-  margin-bottom: 50px;
-}
-
 .team-list {
   display: flex;
-  justify-content: center;
+
 }
 
 .team-item:not(:last-child) {
@@ -249,15 +247,16 @@ img {
 }
 
 .team-item {
-  width: calc(100%-90) / 4;
+  width: calc((100%-90px) / 4);
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-section {
   padding: 30px 0;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  width: 260px;
+   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
 
@@ -319,8 +318,10 @@ img {
   display: flex;
   justify-content: center;
   gap: 8px;
-  padding-top: 77px;
+  margin-bottom: 50px;
 }
+
+.portfolio-filter-item:not(:last-child) {margin-right: 8px;}
 
 .portfolio-btn {
   font-family: 'Roboto';
@@ -332,6 +333,7 @@ img {
   border-radius: 4px;
   border: transparent;
   padding: 6px 22px;
+  background: #F5F4FA;
 }
 
 .portfolio-btn:hover,
@@ -349,18 +351,24 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 94px;
+
+  /* margin: -15px; */
 }
 
 .portfolio-item {
   border: 1px solid #eeeeee;
-  width: calc(100%-60px) / 3;
+  width: calc((100% - 60px) / 3);
+  /* margin: 15px; */
+}
+
+.portfolio-item:last-child {
+  margin-right: 0;
 }
 
 .portfolio-item-box {
   padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+  border-top: none;
 }
 
 .portfolio-title {
